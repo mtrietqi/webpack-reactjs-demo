@@ -16,7 +16,17 @@ const VENDOR_LIBS = [
     ,'redux'
     ,'redux-thunk'
 ]
-
+const devServer = {
+    port : 1311,
+    open: true,
+    disableHostCheck: true,
+    historyApiFallback: true,
+    overlay: true,
+    stats: 'minimal',
+    inline: true,
+    compress: true,
+    contentBase: '/'
+}
 const config = {
     entry: {
         bundle: './src/index.js',
@@ -54,7 +64,8 @@ const config = {
         new HtmlWebpackPlugin({
             template:'src/index.html'
         })
-    ]
+    ],
+    devServer
 }
 
 module.exports = config;

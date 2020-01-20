@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run clean && webpack",
-    "clean": "rimraf build"
+    "clean": "rimraf build",
+    "serve": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
@@ -37,6 +38,7 @@
     "rimraf": "^3.0.0",
     "style-loader": "^1.1.2",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }
