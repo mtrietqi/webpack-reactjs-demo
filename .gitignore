@@ -1,0 +1,4 @@
+# dependencies
+/node_modules
+# Thư mục sau khi build thành production
+/build
